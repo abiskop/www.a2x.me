@@ -1,0 +1,22 @@
+{
+  "name": "web-boilerplate",
+  "version": "1.0.0",
+  "description": "Template/boilerplate for static websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tba"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "template",
+    "boilerplate",
+    "webpack"
+  ],
+  "author": "Alexander Biskop",
+  "license": "Unlicense"
+}
