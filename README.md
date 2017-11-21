@@ -1,7 +1,7 @@
 # web-boilerplate
 Webpack/Babel boilerplate for a basic static website.
 
-I created this while setting up my personal website, https://www.a2x.me.
+I created this while setting up my [personal website](https://www.a2x.me).
 
 
 ### Usage
