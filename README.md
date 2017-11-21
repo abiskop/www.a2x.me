@@ -56,6 +56,7 @@ Most of these are obviously complete overkill for a website this simple. I am ho
 #### Deployment
 
 - [Github Pages](https://pages.github.com/)
+- [Travis CI](https://docs.travis-ci.com/user/deployment/pages/) for pushing to Github Pages
 - [AWS CloudFront](https://aws.amazon.com/cloudfront/)
 
 #### Misc
