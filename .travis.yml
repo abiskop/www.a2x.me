@@ -4,3 +4,12 @@ node_js:
 before_install:
   - npm i -g npm@5.5.1
 script: npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
+  local_dir: dist
+  repo: abiskop/abiskop.github.io
+  target_branch: master
