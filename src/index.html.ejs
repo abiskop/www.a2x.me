@@ -1,0 +1,31 @@
+<!-- Doctype HTML5 -->
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Description of the page less than 150 characters">
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body>
+        <div class="bg"></div>
+        <header></header>
+        <main class="container fadein">
+            <section>
+                <div class="avatar me"></div>
+            </section>
+            <section><%= htmlWebpackPlugin.options.headline %></section>
+            <hr />
+            <section>
+                <div class="icons-container">
+                    <% htmlWebpackPlugin.options.socialLinks.forEach(link => { %>
+                        <a href="<%= link.href %>" class="icon fi-<%= link.icon %>"></a>
+                    <% }) %>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

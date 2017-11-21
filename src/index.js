@@ -1,5 +1,2 @@
-
-import 'normalize.css';
-import './style.css';
-
-console.log('hello world');
+import './styles.css';
+import '../assets/img/favicon.png';
