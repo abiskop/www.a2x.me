@@ -1,6 +1,7 @@
 {
     "props": {
         "title": "Alexander Biskop &middot; Personal Website",
+        "description": "Alexander Biskop's Personal Website",
         "headline": "Hi there! I'm Alexander Biskop, Software Engineer. Currently I live in Mountain View, CA, working for Netflix.",
         "socialLinks": [{
             "icon": "social-github",
