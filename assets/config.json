@@ -1,0 +1,19 @@
+{
+    "props": {
+        "title": "Alexander Biskop &middot; Personal Website",
+        "headline": "Hi there! I'm Alexander Biskop, Software Engineer. Currently I live in Mountain View, CA, working for Netflix.",
+        "socialLinks": [{
+            "icon": "social-github",
+            "href": "https://github.com/abiskop"
+        }, {
+            "icon": "social-linkedin",
+            "href": "https://www.linkedin.com/in/alexander-biskop-811475114/"
+        }, {
+            "icon": "social-stack-overflow",
+            "href": "http://stackoverflow.com/users/342875/alexander-biskop"
+        }, {
+            "icon": "social-facebook",
+            "href": "https://www.facebook.com/abiskop"
+        }]
+    }
+}
