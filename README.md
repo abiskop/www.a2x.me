@@ -6,7 +6,7 @@ I created this while setting up my personal website, https://www.a2x.me.
 
 ### Usage
 
-Fork, and add content-specific files:
+Fork, clone and add content-specific files:
 
 - `assets/img/favicon.png`
 - `assets/img/avatar.jpg`
@@ -45,7 +45,7 @@ Tested with node version 8.9.1, npm version 5.5.1.
 
 ### Technologies Used
 
-TODO 
+Most of these are obviously complete overkill for a website this simple. I am however using this as a playground/showcase for these technologies and a way for me to experiment and learn more about them.
 
 #### Build/Content
 
@@ -55,6 +55,9 @@ TODO
 
 #### Deployment
 
-- Github Pages (link)
-- AWS CloudFront (link)
-- ...
+- [Github Pages](https://pages.github.com/)
+- [AWS CloudFront](https://aws.amazon.com/cloudfront/)
+
+#### Misc
+
+- I attempted to incorporate ~~most of~~ the low-hanging fruits from [David Dias' front-end checklist](https://github.com/thedaviddias/Front-End-Checklist).
