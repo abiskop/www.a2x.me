@@ -7,7 +7,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const WebpackBundleSizeAnalyzerPlugin = require('webpack-bundle-size-analyzer').WebpackBundleSizeAnalyzerPlugin;
 
-const config = require(path.resolve('src', 'config.json'));
+const config = require(path.resolve('assets', 'config.json'));
 
 const cssLoader = ({ include, exclude }) => ({
     test: /\.css$/,
