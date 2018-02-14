@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf ./dist",
     "prebuild": "npm run clean",
-    "build": "webpack --progress --colors --config webpack.config.js",
+    "build": "webpack --progress --colors --config webpack-coldcache.config.js",
     "dev": "./node_modules/.bin/webpack-dev-server --host=\"${DEV_HOST:-127.0.0.1}\" --progress --colors"
   },
   "repository": {
@@ -29,18 +29,21 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.7",
+    "ejs-loader": "^0.3.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-loader": "^0.5.1",
+    "html-webpack-inline-source-plugin": "0.0.9",
     "html-webpack-plugin": "^2.30.1",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
     "resource-hints-webpack-plugin": "0.0.1",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-bundle-size-analyzer": "^2.7.0",
     "webpack-dev-server": "^2.9.4",
-    "webpack-md5-hash": "0.0.5",
-    "ejs-loader": "^0.3.0"
+    "webpack-md5-hash": "0.0.5"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
