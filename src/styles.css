@@ -1,19 +1,21 @@
 
 @import '../node_modules/normalize.css/normalize.css';
 @import '../node_modules/foundation-icons/foundation-icons.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 html, body {
     height: 100%;
 }
 
 body {
-    font-family: 'Source Sans Pro', Verdana, Geneva, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
     font-size: 14pt;
     line-height: 24pt;
     color: #fff;
     background-color: #7aa9c8;
-    letter-spacing: 0.175em;
+    letter-spacing: 0.10em;
 }
 
 .avatar {

@@ -22,7 +22,7 @@
             <section>
                 <div class="icons-container">
                     <% htmlWebpackPlugin.options.socialLinks.forEach(link => { %>
-                        <a href="<%= link.href %>" class="icon fi-<%= link.icon %>"></a>
+                        <a href="<%= link.href %>" class="icon <%= link.icon %>"></a>
                     <% }) %>
                 </div>
             </section>
