@@ -73,17 +73,42 @@ module.exports = {
                 loader: 'file-loader?name=/[name].[ext]'
             },
             {
-                test: /\.(?:png|jpg|svg)$/,
+                test: /\.(?:png|jpg)$/,
                 exclude: /favicon\.png$/,
                 use: {
                     loader: 'url-loader',
                     options: {
-                        /* Inline images smaller than 16kb as data URIs */
-                        limit: 16000,
+                        /* Inline images smaller than x bytes as data URIs */
+                        limit: 64000,
                         /* Fall back to file-loader, appending hash to file name */
                         fallback: 'file-loader',
                         name: '[name].[hash].[ext]'
                     }
+                }
+            },
+            {
+                test: /\.(woff|woff2)$/,
+                /* For fonts, only woff/woff2 is needed in modern browsers. We want to inline those, but not the legacy ones. */
+                // test: /\.(woff|woff2|eot|svg|ttf)$/,
+                loader: 'url-loader',
+                options: {
+                    /* Inline files smaller than x bytes as data URIs */
+                    limit: 64000,
+                    /* Fall back to file-loader, appending hash to file name */
+                    fallback: 'file-loader',
+                    name: '[name].[hash].[ext]'
+                }
+            },
+            {
+                /* For fonts, only woff/woff2 is needed in modern browsers. We want to inline those, but not the legacy ones. */
+                test: /\.(eot|svg|ttf)$/,
+                loader: 'url-loader',
+                options: {
+                    /* Inline files smaller than x bytes as data URIs */
+                    limit: 1024,
+                    /* Fall back to file-loader, appending hash to file name */
+                    fallback: 'file-loader',
+                    name: '[name].[hash].[ext]'
                 }
             },
             {
@@ -92,17 +117,6 @@ module.exports = {
                 options: {
                     minimize: true,
                     filename: 'index.html'
-                }
-            },
-            {
-                test: /\.(woff|woff2|eot|svg|ttf)$/,
-                loader: 'url-loader',
-                options: {
-                    /* Inline files smaller than 16kb as data URIs */
-                    limit: 16000,
-                    /* Fall back to file-loader, appending hash to file name */
-                    fallback: 'file-loader',
-                    name: '[name].[hash].[ext]'
                 }
             }
         ]
