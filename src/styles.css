@@ -107,12 +107,12 @@ a.icon:hover {
 .perf-container {
     display: flex;
     justify-content: flex-end;
-    width: 18%;
+    width: 9%;
     height: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: orange;
+    opacity: .9
 }
 
 .perf-container .perf-placeholder {
