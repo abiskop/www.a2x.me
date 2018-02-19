@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ResourceHintWebpackPlugin = require('resource-hints-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -121,10 +122,8 @@ module.exports = {
             }
         }),
         new WebpackMd5Hash(),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            minimize: true,
-            compress: {warnings: true}
+        new UglifyJsPlugin({
+            sourceMap: true
         }),
         new ExtractTextPlugin("styles.[hash].css"),
         new HtmlWebpackPlugin({
