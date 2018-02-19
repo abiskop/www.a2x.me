@@ -107,18 +107,13 @@ a.icon:hover {
 .perf-container {
     display: flex;
     justify-content: flex-end;
-    width: 9%;
-    height: 100%;
+    width: 0;
+    height: 8px;
     position: absolute;
-    top: 0;
-    right: 0;
-    opacity: .9
-}
-
-.perf-container .perf-placeholder {
-    flex-grow: 100;
-    transition: flex-grow .5s ease-out;
-    background-color: #7aa9c8;
+    bottom: 0;
+    left: 0;
+    opacity: .9;
+    transition: width .3s ease-out;
 }
 
 @import '../node_modules/foundation-icons/foundation-icons.css';
