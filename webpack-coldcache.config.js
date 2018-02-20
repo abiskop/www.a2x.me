@@ -7,6 +7,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const FontminPlugin = require('fontmin-webpack')
 const WebpackBundleSizeAnalyzerPlugin = require('webpack-bundle-size-analyzer').WebpackBundleSizeAnalyzerPlugin;
 
 const config = require(path.resolve('assets', 'config.json'));
@@ -155,6 +156,10 @@ module.exports = {
                 rejected: true,
                 minify: true
             }
+        }),
+        new FontminPlugin({
+            autodetect: true, // automatically pull unicode characters from CSS
+            // glyphs: ['\uf0c8', /* extra glyphs to include */]
         }),
         new HtmlWebpackPlugin({
             ...config.props,
